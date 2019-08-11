@@ -14,4 +14,4 @@ for d in data.keys():
     
 temp = data['data']['stations']
 
-temp[1]
+print(temp[1])
