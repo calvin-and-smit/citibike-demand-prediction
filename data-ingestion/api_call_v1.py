@@ -15,3 +15,13 @@ for d in data.keys():
 temp = data['data']['stations']
 
 print(temp[1])
+
+
+
+
+# plan:
+# create a single ingestion script - execute it multiple times throughout the day using some form of scheduler
+# Host everything on AWS!!!
+#
+
+
