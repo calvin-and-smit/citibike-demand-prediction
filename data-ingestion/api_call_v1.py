@@ -27,6 +27,6 @@ print(temp[1])
 
 ##
 ## script struct:
-## functions : request data, 
-##             modify the struct of data,
+## functions : request data, create separate modules to do individual tasks
+##             modify the struct of data, 
 ##             push into mongodb (/Redshift????)
