@@ -10,3 +10,10 @@
 ##############################################################################################################
 
 import os
+import requests
+import time
+
+
+station_info_url = 'https://gbfs.citibikenyc.com/gbfs/en/station_information.json'
+station_status_url = 'https://gbfs.citibikenyc.com/gbfs/en/station_status.json'
+data = requests.get(url).json()
