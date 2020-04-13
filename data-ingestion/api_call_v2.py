@@ -21,6 +21,7 @@ def getdata(url):
 
 def parsedata(data):
     #do something
+    return
 
 station_info_url = 'https://gbfs.citibikenyc.com/gbfs/en/station_information.json'
 station_status_url = 'https://gbfs.citibikenyc.com/gbfs/en/station_status.json'
