@@ -28,7 +28,7 @@ station_status_url = 'https://gbfs.citibikenyc.com/gbfs/en/station_status.json'
 
 
 data_dump = getdata(station_status_url)
-l = parsedata(d)
+l = parsedata(data_dump)
 
 
 
