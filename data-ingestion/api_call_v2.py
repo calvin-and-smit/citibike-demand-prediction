@@ -31,5 +31,6 @@ data_dump = getdata(station_status_url)
 station_data = parsedata(data_dump)
 
 for each_station in station_data:
-    # do something
+    station_id = each_station['station_id']
+    station_status = each_station['station_status']
 
