@@ -12,6 +12,7 @@
 import os
 import requests
 import time
+import influxdb
 
 
 def getdata(url):
