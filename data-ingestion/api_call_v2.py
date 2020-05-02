@@ -36,4 +36,7 @@ for each_station in station_data:
     station_status = each_station['station_status']
     num_docks_available = each_station['num_docks_available']
     num_bikes_available = each_station['num_bikes_available']
+    num_ebikes_available = each_station['num_ebikes_available']
+    total_bikes_available = num_bikes_available + num_ebikes_available
+    
 
