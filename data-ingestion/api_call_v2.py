@@ -40,6 +40,7 @@ for each_station in station_data:
     total_bikes_available = num_bikes_available + num_ebikes_available
     num_docks_disabled = each_station['num_docks_disabled']
     num_bikes_disabled = each_station['num_bikes_disabled']
-    
+    is_installed = each_station['is_installed']
+    is_returning = each_station['is_returning']
     
 
