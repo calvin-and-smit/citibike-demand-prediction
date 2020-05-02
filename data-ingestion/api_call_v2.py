@@ -34,4 +34,5 @@ station_data = parsedata(data_dump)
 for each_station in station_data:
     station_id = each_station['station_id']
     station_status = each_station['station_status']
+    num_docks_available = each_station['num_docks_available']
 
