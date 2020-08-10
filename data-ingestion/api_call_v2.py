@@ -42,5 +42,6 @@ for each_station in station_data:
     num_bikes_disabled = each_station['num_bikes_disabled']
     is_installed = each_station['is_installed']
     is_returning = each_station['is_returning']
+    is_renting = each_station['is_renting']
     
 
