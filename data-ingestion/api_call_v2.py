@@ -12,7 +12,8 @@
 import os
 import requests
 import time
-from influxdb import InfluxDBClient
+import pandas as pd
+#from influxdb import InfluxDBClient
 
 
 def getdata(url):
@@ -31,6 +32,13 @@ station_status_url = 'https://gbfs.citibikenyc.com/gbfs/en/station_status.json'
 data_dump = getdata(station_status_url)
 station_data = parsedata(data_dump)
 
+df = pd.DataFrame(station_data)
+current_datetime = time.strftime("%m/%d/%Y|%H:%M:%S", time.localtime())
+df['date'] = current_datetime.split('|')[0]
+df['time'] = current_datetime.split('|')[1]
+
+
+'''
 for each_station in station_data:
     station_id = each_station['station_id']
     station_status = each_station['station_status']
@@ -44,4 +52,4 @@ for each_station in station_data:
     is_returning = each_station['is_returning']
     is_renting = each_station['is_renting']
     
-
+'''
